@@ -35,11 +35,10 @@ MLRoadMap/
 ## Setup
 
 ```bash
-git clone https://github.com/validjanova_03/MLRoadMap.git
+git clone https://github.com/Validjanova03/MLRoadMap.git
 cd MLRoadMap
 pip install -r requirements.txt
 ```
-
 ## Stack
 
 `Python` · `scikit-learn` · `pandas` · `numpy` · `matplotlib` · `seaborn`
