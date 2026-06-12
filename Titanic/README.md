@@ -1,4 +1,4 @@
-# Titanic Survival Prediction 🚢
+# Titanic Survival Prediction
 
 My first end-to-end ML project. Built as part of my [30-day ML roadmap](../README.md).
 
