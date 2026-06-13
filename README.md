@@ -16,8 +16,8 @@ MLRoadMap/
 │   ├── titanic_model.py           ← Logistic Regression, evaluation
 │   └── titanic_kaggle_submission.py ← Final predictions + CSV
 ├── Notes/
-│   ├── supervised_vs_unsupervised.md # Key differences and examples
-│   └──  ml_glossary.md # Important ML terminology
+│   ├── supervised_vs_unsupervised.md    ← Key differences and examples
+│   └──  ml_glossary.md                  ← Important ML terminology
 ```
 
 ## Progress
