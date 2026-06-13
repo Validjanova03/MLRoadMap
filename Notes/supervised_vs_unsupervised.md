@@ -10,9 +10,9 @@ Supervised Learning - With label
 | 130 | 170k | 
 
 * The model Learns Input and Output
-Examples: 
-Regression - Predict a number (House Price, Salary, Temperature)
-Classification - Predicts a category (Spam/Not Spam, Fraud/Not Fraud, Pass/Fail)
+- Examples: 
+- Regression - Predict a number (House Price, Salary, Temperature)
+- Classification - Predicts a category (Spam/Not Spam, Fraud/Not Fraud, Pass/Fail)
 
 Unsupervised Learning - Without Label
 ## Only Features:
@@ -23,8 +23,8 @@ Unsupervised Learning - Without Label
 | 180 | 80 |   
 
 * The model tries to find patterns itself
-Cluestring = Finding Groups 
-Example:
+- Cluestring = Finding Groups 
+- Example:
 - Group_1 -> Students
 - Group_2 -> Professionals
 - Group_3 -> Children
