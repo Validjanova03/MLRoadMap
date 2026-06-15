@@ -11,14 +11,14 @@ MLRoadMap/
 │   ├── overfitting_demo.py        ← Visualising overfitting vs underfitting
 │   └── bias_variance_notes.md     ← Personal notes on the tradeoff
 │
-└── Titanic/
+├── Titanic/
 │   ├── titanic_eda.py             ← EDA and visualisation
 │   ├── titanic_model.py           ← Logistic Regression, evaluation
 │   └── titanic_kaggle_submission.py ← Final predictions + CSV
 ├── Notes/
 │   ├── supervised_vs_unsupervised.md    ← Key differences and examples
 │   └──  ml_glossary.md                  ← Important ML terminology
-├── LinearRegression/
+└── LinearRegression/
 │   ├── linear_regression_from_scratch.py
 │   ├── linear_regression_sklearn.py
 │   ├── gradient_descent_demo.py
