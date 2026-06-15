@@ -19,9 +19,9 @@ MLRoadMap/
 │   ├── supervised_vs_unsupervised.md    ← Key differences and examples
 │   └──  ml_glossary.md                  ← Important ML terminology
 └── LinearRegression/
-│   ├── linear_regression_scratch.py
-│   ├── linear_regression_sklearn.py
-│   └── linear_regression_notes.md
+│   ├── Linear_Regression_Scratch.py   ← Linear Regression from scratch (NumPy)
+│   ├── Linear_regression_sklearn.py   ← sklearn implementation
+│   └── LinearRegression_notes.md      ← Theory, MSE, Gradient Descent, R²
 ```
 
 ## Progress
