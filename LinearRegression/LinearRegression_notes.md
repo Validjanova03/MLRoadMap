@@ -20,6 +20,19 @@ RULE:
 w = Growth rate
 b = Starting value 
 
+Goal of Linear Regression:
+Find the best values of w and b so predictions are as accurate as possible
+
+Prediction:
+Suppose: y = 7x + 3
+x = 10 ,  y = 7(10) + 3 = 73
+Prediction = 73
+
+What is Error?
+Error tells us how wrong the prediction.
+Error = Actual - Predicted
+Example: Actula = 
+
 
 
 
