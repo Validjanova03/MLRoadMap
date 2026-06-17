@@ -31,7 +31,7 @@ Prediction = 73
 What is Error?
 Error tells us how wrong the prediction.
 Error = Actual - Predicted
-Example: Actula = 
+Example: Actual =  
 
 
 
