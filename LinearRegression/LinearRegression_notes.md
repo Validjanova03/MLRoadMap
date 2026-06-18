@@ -49,4 +49,14 @@ Squared: 25 4 4
 Average 33/3 = 11 , MSE = 11
 
 
+Training - find w and b that minimizes MSE (Find the line that makes the smallest mistakes).
+
+Gradient Descent = Steps:
+1. Start with random w and b
+2. Calculate Error
+3. Adjust b and w
+4. Repeat
+Untill Error becomes very small
+R^2 used for measure quality
+
 
