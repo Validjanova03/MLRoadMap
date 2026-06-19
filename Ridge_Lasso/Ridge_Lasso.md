@@ -1,7 +1,7 @@
 Regularization: Ridge & Lasso
 Our model learned TOO HARD. It memorized the training data, including its noise and now fails on new data.
 Without Regularization: Weights grow freely to fit every data point
-
+Regularization - used to prevent overfitting by adding a penalty term to the loss function.
 1) Ridge(L2) = weight shrink toward 0 but never reach it 
 RIDGE MSE = MSE + lambda * Sum(w^2)  - Penalises big w
 
