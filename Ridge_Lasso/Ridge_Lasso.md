@@ -22,3 +22,17 @@ LASSO MSE = MSE + lambda * Sum|w| - Penalises any w
 * Produces sparase models (lots of zeros)
 * Good when most features are irrelevant
 USE LASSO WHEN ...
+- You have many features and suspect most are irrelevant
+- Want simpler, interpretable model
+- Example: Gene Expression data - 10000 genes, only 20 metter
+
+ElasticNet - Mix of both
+ELASTICNET MSE = MSE + lambda1 * Sum(w^2) + lambda2 * Sum|w|
+Best of both worlds. When you want some feature elaminated (Lasso) but also want stability (Ridge).
+
+Few features, all likely useful -> RIDGE
+Many features, most likely noise -> LASSO
+Unsure -> ELASTICNET or TRY BOTH
+Not sure if you even need regularization -> CHECK IF TRAIN > TEST ACCURACY
+
+
