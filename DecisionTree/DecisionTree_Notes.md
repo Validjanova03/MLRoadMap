@@ -25,7 +25,15 @@ Purity is measured with **Gini Impurity** or **Entropy**.
 | **Maximum depth** | Maximum number of branches between the top and the bottom |
 | **Branch / subtree** | A subsection of the entire tree |
 
+
+```mermaid
+graph TD
+    A[Wind?] -->|Weak| B[Play Tennis ✓]
+    A -->|Strong| C[Don't Play ✗]
+```
 ---
+
+
 
 ## When to stop splitting?
 
