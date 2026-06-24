@@ -25,13 +25,29 @@ Purity is measured with **Gini Impurity** or **Entropy**.
 | **Maximum depth** | Maximum number of branches between the top and the bottom |
 | **Branch / subtree** | A subsection of the entire tree |
 
+---
 
-```
-        [Wind?]
-       /       \
-    Weak       Strong
-     /             \
-[Play ✓]       [Don't Play ✗]
+                    ┌─────────────┐
+                    │    Wind?    │  ← Root Node
+                    └─────────────┘
+                    /             \
+                 YES               NO
+                 /                   \
+        ┌─────────────┐       ┌─────────────┐
+        │   Outlook?  │       │  Play: NO   │ ← Leaf Node
+        └─────────────┘       └─────────────┘
+          /         \
+        YES          NO
+        /              \
+┌───────────┐    ┌───────────┐
+│ Play: YES │    │  Windy?   │  ← Internal Node
+└───────────┘    └───────────┘
+                   /       \
+                 YES         NO
+                 /             \
+         ┌───────────┐   ┌───────────┐
+         │ Play: NO  │   │ Play: YES │ ← Leaf Nodes
+         └───────────┘   └───────────┘ay ✓]       [Don't Play ✗]
 ```
 ---
 
