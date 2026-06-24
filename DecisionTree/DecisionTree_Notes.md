@@ -27,34 +27,34 @@ Purity is measured with **Gini Impurity** or **Entropy**.
 
 ---
 
-                    ┌─────────────┐
-                    │    Wind?    │  ← Root Node
-                    └─────────────┘
-                    /             \
-                 YES               NO
-                 /                   \
-        ┌─────────────┐       ┌─────────────┐
-        │   Outlook?  │       │  Play: NO   │ ← Leaf Node
-        └─────────────┘       └─────────────┘
-          /         \
-        YES          NO
-        /              \
-┌───────────┐    ┌───────────┐
-│ Play: YES │    │  Windy?   │  ← Internal Node
-└───────────┘    └───────────┘
-                   /       \
-                 YES         NO
-                 /             \
-         ┌───────────┐   ┌───────────┐
-         │ Play: NO  │   │ Play: YES │ ← Leaf Nodes
-         └───────────┘   └───────────┘ay ✓]       [Don't Play ✗]
+## Decision tree diagram
 
-         
+```
+                         ┌──────────────┐
+                         │    Wind?     │  ← Root Node (Depth 0)
+                         └──────────────┘
+                          /            \
+                        YES             NO
+                        /                 \
+             ┌──────────────┐     ┌──────────────┐
+             │   Outlook?   │     │  Play: NO  ✗ │  ← Leaf Node
+             └──────────────┘     │  Gini = 0.00 │
+               /           \      └──────────────┘
+             YES             NO
+             /                 \
+  ┌──────────────┐     ┌──────────────┐
+  │ Play: YES  ✓ │     │    Windy?    │  ← Internal Node (Depth 2)
+  │ Gini = 0.00  │     └──────────────┘
+  └──────────────┘       /          \
+                        YES          NO
+                        /              \
+             ┌──────────────┐  ┌──────────────┐
+             │  Play: NO  ✗ │  │ Play: YES  ✓ │  ← Leaf Nodes (Depth 3)
+             │ Gini = 0.00  │  │ Gini = 0.00  │
+             └──────────────┘  └──────────────┘
 ```
 
 ---
-
-
 
 ## When to stop splitting?
 
