@@ -42,8 +42,20 @@ IG = Gini(Before) - Average_Gini(after)
 If IG is High - Split cleaned up alot -> Good split
 If IG is Low - Split barely helped -> Bad split
 Example: We have dataset of 10 samples, 6 Red , 4 Blue
+Parent Gini(Before): p_red = 6/10, p_blue = 4/10
+Gini(Parent) = 1 - (0.6^2 + 0.4^2) = 1 - (0.36 + 0.16) = 0.48
+Split into 2 child nodes
+* Child A: 4 Red, 1 Blue
+Gini(A) = 1 - (4/5^2 + 1/5^2) = 1 - (0.64 + 0.04) = 0.32
 
+* Child B: 2 Red, 3 Blue
+Gini B: 1 - (2/5^2 + 3/5^2) = 1 - (0.4^2 + 0.6^2) = 1 - (0.16 + 0.36) = 0.48
 
+Weighted average Gini (After):
+WG(After) = 5/10 * 0.32 + 5/10 * 0.48 = 0.16 + 0.24 = 0.40
+IG:
+IG = 0.48 - 0.40 = 0.08 -> reduced impurity a little but not dramatically
+We need higher IG
 
 
 
