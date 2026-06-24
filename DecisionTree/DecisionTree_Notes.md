@@ -39,8 +39,9 @@ How much did this split clean up the mess?
 Before split we have one bowl(messy). After the split we have 2 smaller bowls. If the two smaller bowls are cleaner than the original that split was useful.
 IG = Gini(Before) - Average_Gini(after)
 
-
-
+If IG is High - Split cleaned up alot -> Good split
+If IG is Low - Split barely helped -> Bad split
+Example: We have dataset of 10 samples, 6 Red , 4 Blue
 
 
 
