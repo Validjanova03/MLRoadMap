@@ -34,3 +34,17 @@ Pure bowl(all red): Entopy = 0.00
 3 red, 1 blue: Entropy = 0.81 (still not good) 
 
 
+Information Gain (IG)
+How much did this split clean up the mess?
+Before split we have one bowl(messy). After the split we have 2 smaller bowls. If the two smaller bowls are cleaner than the original that split was useful.
+
+
+
+
+
+
+
+
+
+
+
