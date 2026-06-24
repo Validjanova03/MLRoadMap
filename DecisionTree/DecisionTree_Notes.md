@@ -15,5 +15,13 @@ IMAGE
 
 
 
+How to evaluate the purity of leaf or decide when to stop?
+On Categorical variables: Entropy and Information Gain (IG)
+On Continious variables: Reduction in variance
+We need always low impurity: Gini = 0.00
+Gini: Asks "If i randomly pick 2 candies from this bowl, what is chance they are different olours?"
+High Chance = Messy = High Gini
+Low Chance = Organised = Low Gini
+Gini = 1 -(p_red^2 + p_blue^2)
 
 
