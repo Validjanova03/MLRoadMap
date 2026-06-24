@@ -26,10 +26,12 @@ Purity is measured with **Gini Impurity** or **Entropy**.
 | **Branch / subtree** | A subsection of the entire tree |
 
 
-```mermaid
-graph TD
-    A[Wind?] -->|Weak| B[Play Tennis ✓]
-    A -->|Strong| C[Don't Play ✗]
+```
+        [Wind?]
+       /       \
+    Weak       Strong
+     /             \
+[Play ✓]       [Don't Play ✗]
 ```
 ---
 
