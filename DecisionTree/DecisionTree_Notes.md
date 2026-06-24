@@ -48,7 +48,10 @@ Purity is measured with **Gini Impurity** or **Entropy**.
          ┌───────────┐   ┌───────────┐
          │ Play: NO  │   │ Play: YES │ ← Leaf Nodes
          └───────────┘   └───────────┘ay ✓]       [Don't Play ✗]
+
+         
 ```
+
 ---
 
 
