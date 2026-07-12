@@ -1,0 +1,1 @@
+The problem with one decision treeA single decision tree is unstable. Show it slightly different training data and it builds a completely different tree. This is called high variance — the model is too sensitive to the exact data it saw.
