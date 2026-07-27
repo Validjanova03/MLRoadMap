@@ -1,27 +1,15 @@
-# 📊 Evaluation Metrics Deep Dive (NumPy Only)
+# 📊 Evaluation Metrics for Classification (NumPy Only)
 
-This document explores core evaluation metrics for classification models, implemented **from scratch with NumPy**.
+When building a machine learning classification model, training the model is only half of the work. We also need to **measure how well the model performs**. This is where **evaluation metrics** come in.
+
+Different metrics provide different insights about a model's performance. Some metrics focus on overall correctness, while others are more useful when dealing with **imbalanced datasets**.
 
 ---
 
-## 🔹 Confusion Matrix
+# 1️⃣ Confusion Matrix
 
-The confusion matrix shows counts of **True Positives (TP), False Positives (FP), True Negatives (TN), False Negatives (FN)**.
+The **Confusion Matrix** is the foundation of almost every classification metric.
 
-```python
-import numpy as np
+It compares the **actual labels** with the **predicted labels** and tells us exactly where the model made correct and incorrect predictions.
 
-def confusion_matrix(y_true, y_pred):
-    classes = np.unique(np.concatenate((y_true, y_pred)))
-    matrix = np.zeros((len(classes), len(classes)), dtype=int)
-    for i, actual in enumerate(classes):
-        for j, predicted in enumerate(classes):
-            matrix[i, j] = np.sum((y_true == actual) & (y_pred == predicted))
-    return matrix, classes
-
-# Example
-y_true = np.array([1,0,1,1,0,0,1])
-y_pred = np.array([1,0,0,1,0,1,1])
-cm, labels = confusion_matrix(y_true, y_pred)
-print("Labels:", labels)
-print(cm)
+For binary classification, there are four possible outcomes:
