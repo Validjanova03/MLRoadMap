@@ -35,3 +35,45 @@ The confusion matrix helps us understand **what type of mistakes the model makes
 ---
 
 # 2️⃣ Accuracy
+Accuracy measures the percentage of predictions that are correct.
+
+### Formula
+
+\[
+Accuracy = \frac{TP + TN}{TP + TN + FP + FN}
+\]
+
+### Simple Explanation
+
+If your model makes **100 predictions** and **92 are correct**, then the accuracy is:
+
+```
+Accuracy = 92%
+```
+
+### When to Use
+
+✅ Balanced datasets
+
+### When Not to Use
+
+If one class appears much more often than another, accuracy can be misleading.
+
+Example:
+
+```
+99 Cats
+1 Dog
+```
+
+If the model predicts **Cat every time**, accuracy is:
+
+```
+99%
+```
+
+But the model never detects dogs.
+
+---
+
+# 3️⃣ Precision
