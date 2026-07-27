@@ -2,7 +2,7 @@
 # NumPy-only implementations of confusion matrix, precision, recall, F1, ROC curve, and AUC
 
 import numpy as np
-//ooi
+
 def confusion_matrix(y_true, y_pred):
     classes = np.unique(np.concatenate((y_true, y_pred)))
     matrix = np.zeros((len(classes), len(classes)), dtype=int)
