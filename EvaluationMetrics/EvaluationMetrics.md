@@ -13,3 +13,25 @@ The **Confusion Matrix** is the foundation of almost every classification metric
 It compares the **actual labels** with the **predicted labels** and tells us exactly where the model made correct and incorrect predictions.
 
 For binary classification, there are four possible outcomes:
+| Actual | Predicted | Meaning |
+|---------|-----------|---------|
+| Positive | Positive | ✅ True Positive (TP) |
+| Positive | Negative | ❌ False Negative (FN) |
+| Negative | Positive | ❌ False Positive (FP) |
+| Negative | Negative | ✅ True Negative (TN) |
+
+### Example
+
+```
+                Predicted
+              Positive  Negative
+
+Actual Positive    TP        FN
+Actual Negative    FP        TN
+```
+
+The confusion matrix helps us understand **what type of mistakes the model makes**, not just how many.
+
+---
+
+# 2️⃣ Accuracy
